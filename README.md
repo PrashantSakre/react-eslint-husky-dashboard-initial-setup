@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### And Design support
 
-Support verion 4.x.x
+Support verion 5.x.x

@@ -1,10 +1,10 @@
-import React from 'react'
 import { Card, Typography } from 'antd'
+import React from 'react'
 
 function Dashboard() {
   return (
     <Card>
-      <Typography>Dashboard</Typography>
+      <Typography>Dashboard Content</Typography>
     </Card>
   )
 }

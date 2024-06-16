@@ -1,52 +1,32 @@
-import { Button, Typography, Input } from 'antd'
+import { Button, Col, Flex, Input, Row, Space, Typography } from 'antd'
 import React from 'react'
-import { Container, Row, Col } from 'react-grid-system'
 
 const { Title } = Typography
 function SignUp() {
   return (
-    <Container fluid className="text-center">
-      <Row justify="center" align="center" direction="row" className="h-100vh">
+    <Flex justify="center" style={{ height: '100%' }}>
+      <Row justify="center" align="middle">
         <Col>
-          <Row justify="center" align="center">
+          <Row justify="center" align="middle">
             <Col>
               <Title level={4}>Welcome to</Title>
-              <Title style={{ margin: 0 }}>
-                react-eslint-husky-dashboard-initial-setup
-              </Title>
+              <Title style={{ margin: 0 }}>Dashboard initial setup</Title>
             </Col>
           </Row>
           <Title level={5}>Register using your mobile number</Title>
-          <Container
-            fluid
-            className="transparent"
-            style={{ marginTop: '1rem' }}
-          >
-            <Row
-              align="center"
-              justify="center"
-              direction="column"
-              gutterWidth={16}
-            >
-              <Col md={4} xs={10} style={{ margin: '0.5rem 0' }}>
-                <Input size="large" placeholder="Full Name" />
-              </Col>
-              <Col md={4} xs={10} style={{ margin: '0.5rem 0' }}>
-                <Input size="large" placeholder="Mobile Number" />
-              </Col>
-              <Col md={4} xs={10} style={{ margin: '0.5rem 0' }}>
-                <Input size="large" placeholder="Enter OTP" />
-              </Col>
-              <Col md={4} xs={10} style={{ margin: '0.5rem 0' }}>
-                <Button type="primary" size="large" style={{ width: '100%' }}>
-                  Send OTP
-                </Button>
-              </Col>
-            </Row>
-          </Container>
+          <Flex fluid vertical style={{ marginTop: '1rem' }}>
+            <Space direction="vertical">
+              <Input size="large" placeholder="Full Name" />
+              <Input size="large" placeholder="Mobile Number" />
+              <Input size="large" placeholder="Enter OTP" />
+              <Button type="primary" size="large" style={{ width: '100%' }}>
+                Send OTP
+              </Button>
+            </Space>
+          </Flex>
         </Col>
       </Row>
-    </Container>
+    </Flex>
   )
 }
 
